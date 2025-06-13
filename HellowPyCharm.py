@@ -1,1 +1,0 @@
-print('Hello 파이참')
