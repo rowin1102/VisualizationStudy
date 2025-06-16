@@ -1,0 +1,14 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('../resData/auto-mpg.csv', header=None, na_values='?')
+df.columns = ['mpg', 'cylinders', 'displacement', 'horsepower', 'weight',
+              'acceleration', 'model year', 'origin', 'naem']
+
+# 산점도
+df.plot(x='weight', y='mpg', kind='scatter')
+plt.show()
+
+# 박스플롯
+df[['mpg', 'cylinders']].plot(kind='box')
+plt.show()
