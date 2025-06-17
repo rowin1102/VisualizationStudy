@@ -3,7 +3,7 @@ import pandas as pd
 # csv 파일을 데이터프레임으로 변환. header옵션으로 첫행부터 사용.
 df = pd.read_csv('../resData/auto-mpg.csv', header=None)
 df.columns = ['mpg', 'cylinders', 'displacement', 'horsepower', 'weight',
-              'acceleration', 'model year', 'origin', 'naem']
+              'acceleration', 'model year', 'origin', 'name']
 
 # 데이터프레임의 일부 데이터 확인
 print('처음 5개 행', '='*30)

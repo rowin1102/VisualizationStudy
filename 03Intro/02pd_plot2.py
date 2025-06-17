@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('../resData/auto-mpg.csv', header=None, na_values='?')
 df.columns = ['mpg', 'cylinders', 'displacement', 'horsepower', 'weight',
-              'acceleration', 'model year', 'origin', 'naem']
+              'acceleration', 'model year', 'origin', 'name']
 
 # 산점도
 df.plot(x='weight', y='mpg', kind='scatter')

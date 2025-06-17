@@ -6,7 +6,7 @@ import numpy as np
 df = pd.read_csv('../resData/auto-mpg.csv', header=None, na_values='?')
 # 변환2 : na_values 옵션으로 결측치 ?를 NaN으로 대체 후 변환
 df.columns = ['mpg', 'cylinders', 'displacement', 'horsepower', 'weight',
-              'acceleration', 'model year', 'origin', 'naem']
+              'acceleration', 'model year', 'origin', 'name']
 
 # 마력 컬럼만 출력하기
 print(df['horsepower'])
