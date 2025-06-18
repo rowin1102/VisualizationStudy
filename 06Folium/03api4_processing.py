@@ -26,5 +26,6 @@ for rs in cursor:
     folium.Marker([latitude, longitude], popup=faclt).add_to(univ_map)
     print(faclt, latitude, longitude)
 
+# 마커가 포함된 지도 생성 및 저장
 univ_map.save('../saveFiles/univ_map_marker.html')
 print('맵 생성')
