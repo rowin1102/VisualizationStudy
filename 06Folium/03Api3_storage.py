@@ -16,6 +16,7 @@ params = dict(
 raw_data = requests.get(url = url, params=params)
 binary_data = raw_data.content
 json_data = json.loads(binary_data)
+print(json_data)
 
 for jd in json_data['Jnclluniv'][1]['row']:
     SIGUN_NM = jd['SIGUN_NM']
